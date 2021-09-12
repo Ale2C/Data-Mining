@@ -1,4 +1,4 @@
-#Practice 1 Unit 1
+# Practice 1 Unit 1
 
 Test the Law Of Large Numbers for N random normally distributed numbers with mean = 0, stdev=1:
 
