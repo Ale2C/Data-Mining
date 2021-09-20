@@ -48,7 +48,7 @@ print(profit)
 ``` 
 
 ``` scala 
-print(profit)
+> print(profit)
  [1]  2522.67  1911.39 -3707.79 -2914.31  -599.92  7265.24  8210.55  3944.97  3328.39 -2238.65  659.60 11629.54
 ``` 
 
@@ -58,10 +58,20 @@ tax <- round(0.30 * profit, 2)
 print(tax) 
 ``` 
 
+``` scala 
+> print(tax) 
+ [1]   756.80   573.42 -1112.34  -874.29  -179.98  2179.57  2463.17  1183.49  998.52  -671.60   197.88  3488.86
+``` 
+
 ## Calculate Profit Remaining After Tax Is Deducted
 ``` scala 
 profit.after.tax <- profit - tax
 print(profit.after.tax)
+``` 
+
+``` scala 
+> print(profit.after.tax)
+ [1]  1765.87  1337.97 -2595.45 -2040.02  -419.94  5085.67  5747.38  2761.48  2329.87 -1567.05   461.72  8140.68
 ``` 
 
 ## Calculate The Profit Margin As Profit After Tax Over Revenue
@@ -71,10 +81,20 @@ profit.margin <- round(tax / revenue, 2) * 100
 print(profit.margin)
 ``` 
 
+``` scala 
+> print(profit.margin)
+ [1]   5   8 -13 -10  -2  27  21  12  10  -5   2  23
+``` 
+
 ## Calculate The Mean Profit After Tax For The 12 Months
 ``` scala 
 mean_pat <- mean(profit.after.tax)
 print(mean_pat)
+``` 
+
+``` scala 
+> print(mean_pat)
+[1] 1750.682
 ``` 
 
 ## Find The Months With Above-Mean Profit After Tax
@@ -122,6 +142,35 @@ print(best.month)
 print(worst.month)
 ``` 
 
+``` scala 
+> print(revenue.1000)
+ [1] 15  8  9  9  8  8 11 10 10 14 11 15
+ 
+> print(expenses.1000)
+ [1] 12  6 12 12  9  1  3  6  7 17 10  4
+ 
+> print(profit.1000)
+ [1]  3  2 -4 -3 -1  7  8  4  3 -2  1 12
+ 
+> print(profit.after.tax.1000)
+ [1]  2  1 -3 -2  0  5  6  3  2 -2  0  8
+ 
+> print(profit.margin)
+ [1]   5   8 -13 -10  -2  27  21  12  10  -5   2  23
+ 
+> print(good.months)
+ [1]  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE
+ 
+> print(bad.months)
+ [1] FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE
+ 
+> print(best.month)
+ [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE
+ 
+> print(worst.month)
+ [1] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+``` 
+
 ## BONUS:
 ## Preview Of What's Coming In The Next Section
 ``` scala 
@@ -141,4 +190,26 @@ M <- rbind(
 ## Print The Matrix
 ``` scala 
 print(M)
+``` 
+
+``` scala 
+                      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] 
+revenue.1000            15    8    9    9    8    8   11   10   10    14
+expenses.1000           12    6   12   12    9    1    3    6    7    17
+profit.1000              3    2   -4   -3   -1    7    8    4    3    -2
+profit.after.tax.1000    2    1   -3   -2    0    5    6    3    2    -2
+profit.margin            5    8  -13  -10   -2   27   21   12   10    -5
+good.months              1    0    0    0    0    1    1    1    1     0
+bad.months               0    1    1    1    1    0    0    0    0     1
+best.month               0    0    0    0    0    0    0    0    0     0
+worst.month              0    0    1    0    0    0    0    0    0     0 [,11] [,12]
+   11    15
+   10     4
+    1    12
+    0     8
+    2    23
+    0     1
+    1     0
+    0     1
+    0     0
 ``` 
