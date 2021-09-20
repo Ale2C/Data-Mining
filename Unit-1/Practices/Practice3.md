@@ -34,69 +34,74 @@ mean()
 max()
 min()
 
-##Data
+## Data
 ``` scala 
 revenue <- c(14574.49, 7606.46, 8611.41, 9175.41, 8058.65, 8105.44, 11496.28, 9766.09, 10305.32, 14379.96, 10713.97, 15433.50)
 expenses <- c(12051.82, 5695.07, 12319.20, 12089.72, 8658.57, 840.20, 3285.73, 5821.12, 6976.93, 16618.61, 10054.37, 3803.96)
 ``` 
 
-##Solution
-##Calculate Profit As The Differences Between Revenue And Expenses
+## Solution
+## Calculate Profit As The Differences Between Revenue And Expenses
 ``` scala 
 profit <- revenue - expenses
 print(profit)
 ``` 
 
-##Calculate Tax As 30% Of Profit And Round To 2 Decimal Points
+``` scala 
+print(profit)
+ [1]  2522.67  1911.39 -3707.79 -2914.31  -599.92  7265.24  8210.55  3944.97  3328.39 -2238.65  659.60 11629.54
+``` 
+
+## Calculate Tax As 30% Of Profit And Round To 2 Decimal Points
 ``` scala 
 tax <- round(0.30 * profit, 2)
 print(tax) 
 ``` 
 
-##Calculate Profit Remaining After Tax Is Deducted
+## Calculate Profit Remaining After Tax Is Deducted
 ``` scala 
 profit.after.tax <- profit - tax
 print(profit.after.tax)
 ``` 
 
-##Calculate The Profit Margin As Profit After Tax Over Revenue
-##Round To 2 Decimal Points, Then Multiply By 100 To Get %
+## Calculate The Profit Margin As Profit After Tax Over Revenue
+## Round To 2 Decimal Points, Then Multiply By 100 To Get %
 ``` scala 
 profit.margin <- round(tax / revenue, 2) * 100
 print(profit.margin)
 ``` 
 
-##Calculate The Mean Profit After Tax For The 12 Months
+## Calculate The Mean Profit After Tax For The 12 Months
 ``` scala 
 mean_pat <- mean(profit.after.tax)
 print(mean_pat)
 ``` 
 
-##Find The Months With Above-Mean Profit After Tax
+## Find The Months With Above-Mean Profit After Tax
 ``` scala 
 good.months <- profit.after.tax > mean_pat
 print(good.months)
 ``` 
 
-##Bad Months Are The Opposite Of Good Months !
+## Bad Months Are The Opposite Of Good Months !
 ``` scala 
 bad.months <- !good.months
 print(bad.months)
 ```
 
-##The Best Month Is Where Profit After Tax Was Equal To The Maximum
+## The Best Month Is Where Profit After Tax Was Equal To The Maximum
 ``` scala 
 best.month <- profit.after.tax == max(profit.after.tax)
 print(best.month)
 ``` 
 
-##The Worst Month Is Where Profit After Tax Was Equal To The Minimum
+## The Worst Month Is Where Profit After Tax Was Equal To The Minimum
 ``` scala 
 worst.month <- profit.after.tax == min(profit.after.tax)
 print(worst.month)
 ```
 
-##Convert All Calculations To Units Of One Thousand Dollars
+## Convert All Calculations To Units Of One Thousand Dollars
 ``` scala 
 revenue.1000 <- round(revenue / 1000, 0)
 expenses.1000 <- round(expenses / 1000, 0)
@@ -104,7 +109,7 @@ profit.1000 <- round(profit / 1000, 0)
 profit.after.tax.1000 <- round(profit.after.tax / 1000, 0)
 ``` 
 
-##Print Results
+## Print Results
 ``` scala 
 print(revenue.1000)
 print(expenses.1000)
@@ -117,8 +122,8 @@ print(best.month)
 print(worst.month)
 ``` 
 
-##BONUS:
-##Preview Of What's Coming In The Next Section
+## BONUS:
+## Preview Of What's Coming In The Next Section
 ``` scala 
 M <- rbind(
   revenue.1000,
@@ -133,7 +138,7 @@ M <- rbind(
 )
 ``` 
 
-##Print The Matrix
+## Print The Matrix
 ``` scala 
 print(M)
 ``` 
