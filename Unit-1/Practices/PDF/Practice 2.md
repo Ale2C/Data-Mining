@@ -1,3 +1,32 @@
+## Ingeniería en sistemas computaciones
+
+### Datos masivos
+
+<p align="center">
+    <img alt="Logo" src="https://www.tijuana.tecnm.mx/wp-content/themes/tecnm/images/logo_TECT.png" width=250 height=250>
+</p>
+
+
+
+### Practica 2
+
+**Alumnos:** 
+
+Marquez Millan Seashell Vanessa 
+
+Castro Cebreros Alejandro
+
+
+
+
+
+
+
+
+
+***
+
+``` R
 #20 funciones practica 2
 
 1-.#dibuja la gráfica de densidad del núcleo.
@@ -117,7 +146,7 @@ colSums(data)
 colMeans(data) 
 rowMeans(data) 
 
-17-. #aplicar casos
+17-. #Version de switch case
 x1 <- 1:6                                     # Create first vector
 x1                                            # Print first vector
 
