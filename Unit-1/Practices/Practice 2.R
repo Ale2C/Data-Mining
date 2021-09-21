@@ -151,3 +151,4 @@ set.seed(456654)                # Set seed for reproducibility
 x <- round(runif(10, 1, 9))     # Create example vector
 x     
 cumsum(x)          
+

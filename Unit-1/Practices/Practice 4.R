@@ -109,12 +109,16 @@ FreeThrows <- rbind(KobeBryant_FT, JoeJohnson_FT, LeBronJames_FT, CarmeloAnthony
 #Remove vectors - we don't need them anymore
 rm(KobeBryant_FT, JoeJohnson_FT, CarmeloAnthony_FT, DwightHoward_FT, ChrisBosh_FT, LeBronJames_FT, ChrisPaul_FT, DerrickRose_FT, DwayneWade_FT, KevinDurant_FT)
 #Rename the columns
+
 colnames(FreeThrows) <- c("año1","año2","año3","año4","año5","año6","año7","año8","año9","año10")
+
 #Rename the rows
 rownames (FreeThrows) <- c("JKobeBryant","JJoeJohnson","JLeBronJames","JCarmeloAnthony","JDwightHoward","JChrisBosh","JChrisPaul","JKevinDurant","JDerrickRose","JDwayneWade")
 
 #Grafics
 #Intentos de Trows gratis por juego
 
+
 #Garantía de Trhows gratis
+
 #Estilo de juego del jugador (preferencia de 2 vs 3 puntos) excluyendo los tiros libres
