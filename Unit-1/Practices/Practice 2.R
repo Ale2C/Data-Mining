@@ -1,16 +1,16 @@
 #20 funciones practica 2
 
-1-.#dibuja la gráfica de densidad del núcleo.
+1-.#dibuja la grÃ¡fica de densidad del nÃºcleo.
 set.seed(13531)                                     # Create random numeric data
 x <- rnorm(1000)
 plot(density(x))
 
-2-.cat(x) #Esta función escribe texto y variables en la salida.
+2-.cat(x) #Esta funciÃ³n escribe texto y variables en la salida.
 x <- 2
 y <- 4
 cat(x,"elevado a",y,"es",x ^ y,"\n")
 
-3-.invisible(x) #Oculta x en la función return de forma que no se ve el resultado
+3-.invisible(x) #Oculta x en la funciÃ³n return de forma que no se ve el resultado
 suma <- function(a, b) {
   s <- a + b
   return(invisible(s))
@@ -19,7 +19,7 @@ suma(5,4)
 x <- suma(5,4)
 x
 
-4-. #convierte valores numéricos en rangos factoriales.
+4-. #convierte valores numÃ©ricos en rangos factoriales.
 x <- 1:10                                      # Create example vector
 x 
 x_cut <- cut(x, breaks = c(0, 4, 6, 7, 10))    # Apply cut()
@@ -28,7 +28,7 @@ x_cut
 5-.trunc(x)
 trunc(1.999999)
 
-6-.abline ( h =  1 )  #agrega líneas rectas para trazar. 
+6-.abline ( h =  1 )  #agrega lÃ­neas rectas para trazar. 
 set.seed(9764355)              
 x <- rnorm(1000)
 y <- rnorm(1000) + 0.4 * x
@@ -36,7 +36,7 @@ plot ( x, y )
 plot(x, y)                     
 abline(h = 1.3)                
 
-7-.aggregate(x) #calcula estadísticas resumidas de subgrupos de un conjunto de datos.
+7-.aggregate(x) #calcula estadÃ­sticas resumidas de subgrupos de un conjunto de datos.
 data <- data.frame(x1 = 1:5,                                  
                    x2 = 2:6,
                    x3 = 1,
@@ -49,7 +49,7 @@ aggregate(x = data[ , colnames(data) != "group"],
           FUN = mean)
 
 
-8-.all(x)  #comprueba si todos los valores de un vector lógico son VERDADEROS.
+8-.all(x)  #comprueba si todos los valores de un vector lÃ³gico son VERDADEROS.
 x1 <- c(1, 5, 3, - 3, 5, - 7, 8)                           # Example vector
 x1  
 all(x1 < 0)   
@@ -65,7 +65,7 @@ set.seed(8642)                                               # Create random dat
 x <- rnorm(1000)
 boxplot(x)
 
-11-.between(x1, left1, right1)    #prueba si un valor numérico cae dentro de un rango especificado.
+11-.between(x1, left1, right1)    #prueba si un valor numÃ©rico cae dentro de un rango especificado.
 install.packages("dplyr")        # Install dplyr package
 library("dplyr")                 # Load dplyr package
 
@@ -88,7 +88,7 @@ library("dplyr")                             # Load dplyr package
 bind_rows(data1, data2) 
 
 
-13-.round(x2)  #redondee el valor numérico hasta el siguiente número entero superior.
+13-.round(x2)  #redondee el valor numÃ©rico hasta el siguiente nÃºmero entero superior.
 x2 <- 1.9
 x3 <- - 1.1
 round(x2)
@@ -101,13 +101,13 @@ tolower(x)                                # Convert to lower case letters
 toupper(x)                                # Convert to upper case letters
 
 
-15-. coalesce(x, 999)      #redondee el valor numérico hasta el siguiente número entero superior.
+15-. coalesce(x, 999)      #redondee el valor numÃ©rico hasta el siguiente nÃºmero entero superior.
 install.packages("dplyr")        # Install and load dplyr package
 library("dplyr")
 x <- c(2, 1, NA, 5, 3, NA) 
 coalesce(x, 999)      
 
-16-.rowMeans(data) # la media de cada columna de un marco, matriz o matriz de datos numéricos.
+16-.rowMeans(data) # la media de cada columna de un marco, matriz o matriz de datos numÃ©ricos.
 set.seed(1234)                                          # Set seed
 data <- data.frame(matrix(round(runif(12, 1, 20)),      # Create example data
                           nrow = 3, ncol = 4))
@@ -142,12 +142,13 @@ library("dplyr")
 c(5, 7, 1, 5, 1)  
 combine(5, 7, 1, 5, 1) 
 
-19-.#devuelve la clasificación de cada valor de nuestro vector de entrada
+19-.#devuelve la clasificaciÃ³n de cada valor de nuestro vector de entrada
 x <- c(4, 1, 5, 2, 3, 3)  
 row_number(x) 
 
-20-.#calcula la suma acumulativa de los elementos de un vector numérico.
+20-.#calcula la suma acumulativa de los elementos de un vector numÃ©rico.
 set.seed(456654)                # Set seed for reproducibility
 x <- round(runif(10, 1, 9))     # Create example vector
 x     
 cumsum(x)          
+
