@@ -1,8 +1,8 @@
 # EXAM unit 1
 
-#Debe generar un diagrama de dispersión (scatter-plot) que muestre las estadísticas
+#Debe generar un diagrama de dispersiï¿½n (scatter-plot) que muestre las estadï¿½sticas
 #de esperanza de vida ( Life expectancy - eje y) y tasa de fertilidad (Fertility Rate -eje
-#x) por país (Country).
+#x) por paï¿½s (Country).
 
 Frames <- read.csv(file.choose())
 Frames
@@ -27,12 +27,13 @@ merged <- merge(Frames, mydf, by.x = "Country.Code", by.y = "ContryCode")
 head(merged)
 
 #create the schema 
-#El diagrama de dispersión también debe clasificarse por países Regiones (CountryRegions).
+#El diagrama de dispersiï¿½n tambiï¿½n debe clasificarse por paï¿½ses Regiones (CountryRegions).
 library(ggplot2)
-qplot(data=merged, x=Fertility.Rate, y=LifeExpec, color=Region, size=Country.Code)#Don't find life expectative foy Y 
+qplot(data=merged, x=Fertility.Rate, y=LifeExpec, color=Region, size=Country.Code) 
 
 
-#Se le han proporcionado datos durante 2 años: 1960 y 2013 y se le exige que
-#produzca una visualización para cada uno de estos años.
+#Se le han proporcionado datos durante 2 aï¿½os: 1960 y 2013 y se le exige que
+#produzca una visualizaciï¿½n para cada uno de estos aï¿½os.
+#Crea un filtro entre aï¿½os
 
 
