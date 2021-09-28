@@ -1,0 +1,66 @@
+<p align="center">
+    <img alt="Logo" src="https://www.tijuana.tecnm.mx/wp-content/uploads/2021/08/liston-de-logos-oficiales-educacion-tecnm-FEB-2021.jpg" width=850 height=250>
+</p>
+
+<H2><p align="Center">TECNOLÓGICO NACIONAL DE MÉXICO</p></H2>
+
+<H2><p align="Center">INSTITUTO TECNOLÓGICO DE TIJUANA</p></H2>
+
+<H2><p align="Center">SUBDIRECCIÓN ACADÉMICA</p></H2>
+
+<H2><p align="Center">DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN</p></H2>
+
+<H2><p align="Center">NOMBRE DE LOS ALUMNOS: </p></H2>
+
+<H2><p align="Center">CASTRO CEBREROS ALEJANDRO</p></H2>
+
+<H2><p align="Center">MARQUEZ MILLAN SEASHELL VANESSA</p></H2>
+
+<H2><p align="Center">Carrera: Ingeniería Informática</p></H2>
+
+<H2><p align="Center">Semestre: 9no </p></H2>
+
+<H2><p align="Center">MATERIA: Mineria de datos</p></H2>
+
+<H2><p align="Center">PROFESOR: JOSE CHRISTIAN ROMERO HERNANDEZ</p></H2>
+
+<H2><p align="Center">Practica evaluatoria 1</p></H2>
+
+<H2><p align="Center">Unidad 1</p></H2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+---
+
+# DESARROLLO <br>
+## Abstrac
+
+In that practice we use the program R studios and create a diferents graphics with the comands used in class too we did the analitics of the data frames, we use differntes funccions for connect the schemma and to do opperations 
+
+<br><br>
+
+**Generate scatter-plot**<br>
+The first thing is select the dataframe, for that we need to create a variable where save that df, and chose the correct file then create the vectors needs with that we put together the df and the vectors, but before we revise if the count of each vector it was the correct, and we did only one vector for after put with the principal df, the last thing was the import the library and made the graphic.
+<br>
+
+<p align="center">
+    <img alt="Logo" src="./../Media/Evidence1.png" >
+</p>
+<br><br><br>
+
+**Create graphic for each year**<br>
+Well in this case first we made a filter using the df with the vectors and select the year we want then only we made the graphic
+<p align="center">
+    <img alt="Logo" src="./../Media/Evidence1960.png" >
+</p>
+<p align="center">
+    <img alt="Logo" src="./../Media/Evidence2013.png" >
+</p>
+
+
