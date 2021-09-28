@@ -43,4 +43,15 @@ filter13 <- merged[merged$Year == 2013,]
 qplot(data=filter60, x=Fertility.Rate, y=LifeExpec, color=Region, main="Year 1960")
 qplot(data=filter13, x=Fertility.Rate, y=LifeExpec, color=Region, main="Year 2013")
 
+#Comparacion de los dos periodos
+# Con la informacion mostrada en los graficos podemos ver un gran cambio en la tasa de fertibilidad 
+# a bajado considerablemente en el 2013 que en 1960. Dentro de los cambios se puede ver que en la region
+# de Africa sigue siendo con la mayor tasa fertibilidad aun despues de 53 años, que a comparacion de los
+# paises de Europa siguen con una tasa baja. La region que se vio con mas cambios fue Asia que en 1960
+# la mayoria de sus paises tenian una tasa de 4 en adelante y despues en el 2013 su tasa es menor a 4. 
+# En las otras regiones se pudo ver un cambio en su tasa de fertibilidad pero no tan drastico como las
+# regiones mencionadas anteriormente.  Existen muchas razones para el cambio de fertibilidad de cada pais
+# estos pueden ser personales, economicas, sociales o politicas un ejemplo seria en la region de Asia en 
+# China que tuvo su politica de solo tener un hijo por pareja para controlar mejor la sobrepoblacion en el pais,
+# esta ley fue establecida en 1979 viendo esto podemos ver sus resultados con la grafica del 2013. 
 
