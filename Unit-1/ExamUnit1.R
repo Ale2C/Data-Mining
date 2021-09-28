@@ -29,17 +29,11 @@ head(merged)
 #create the schema 
 #El diagrama de dispersi�n tambi�n debe clasificarse por pa�ses Regiones (CountryRegions).
 library(ggplot2)
-qplot(data=merged, x=Fertility.Rate, y=LifeExpec, color=Region, size=Country.Code)#Don't find life expectative foy Y 
+qplot(data=merged, x=Fertility.Rate, y=LifeExpec, color=Region, size=Country.Code) 
 
 
 #Se le han proporcionado datos durante 2 a�os: 1960 y 2013 y se le exige que
 #produzca una visualizaci�n para cada uno de estos a�os.
-filter60 <- merged[merged$Year == 1960,]
-filter13 <- merged[merged$Year == 2013,]
+#Crea un filtro entre a�os
 
-#Vistas por cada a�o
-qplot(data=filter60, x=Fertility.Rate, y=LifeExpec, color=Region, main="Year 1960")
-qplot(data=filter13, x=Fertility.Rate, y=LifeExpec, color=Region, main="Year 2013")
-
-#The last part
 
