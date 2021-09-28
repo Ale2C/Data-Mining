@@ -63,4 +63,6 @@ Well in this case first we made a filter using the df with the vectors and selec
     <img alt="Logo" src="./../Media/Evidence2013.png" >
 </p>
 
-
+**Comparison of the two periods**<br>
+With the information shown in the graphs, we can see a great change in the fertility rate that has dropped considerably in 2013 than in 1960. Among the changes, it can be seen that the African region continues to have the highest fertility rate even after 53 years, which, compared to European countries, continue with a low rate. The region that saw the most changes was Asia than in 1960 most of their countries had a rate of 4 onwards and then in 2013 their rate is less than 4. In the other regions, a change in their fertility rate could be seen, but not as drastic as the regions mentioned above. There are many reasons for the change in fertility of each country these can be personal, economic, social or political, a serious example in the Asian region in China that had its policy of only having one child per couple to better control overpopulation in the country, this law was established in 1979, seeing this we can see its results with the 2013 graph.
+<br>
