@@ -48,6 +48,21 @@ In that practice we use the program R studios and create a diferents graphics wi
 **Generate scatter-plot**<br>
 The first thing is select the dataframe, for that we need to create a variable where save that df, and chose the correct file then create the vectors needs with that we put together the df and the vectors, but before we revise if the count of each vector it was the correct, and we did only one vector for after put with the principal df, the last thing was the import the library and made the graphic.
 <br>
+```scala
+Frames <- read.csv(file.choose())
+Frames
+Country_Code <- c("ABW"...)
+Life_Expectancy_At_Birth_1960 <- c(65...)
+Life_Expectancy_At_Birth_2013 <- c(75..)
+Life_Expectative <- Life_Expectancy_At_Birth_1960 + Life_Expectancy_At_Birth_2013
+mydf <- data.frame(ContryCode= Country_Code, LifeExpec=Life_Expectative )
+merged <- merge(Frames, mydf, by.x = "Country.Code", by.y = "ContryCode")
+head(merged)
+library(ggplot2)
+qplot(data=merged, x=Fertility.Rate, y=LifeExpec, color=Region, size=Country.Code) 
+
+```
+<br>
 
 <p align="center">
     <img alt="Logo" src="./../Media/Evidence1.png" >
@@ -55,7 +70,14 @@ The first thing is select the dataframe, for that we need to create a variable w
 <br><br><br>
 
 **Create graphic for each year**<br>
-Well in this case first we made a filter using the df with the vectors and select the year we want then only we made the graphic
+Well in this case first we made a filter using the df with the vectors and select the year we want then only we made the graphic <br>
+
+```scala
+filter60 <- merged[merged$Year == 1960,]
+filter13 <- merged[merged$Year == 2013,]
+qplot(data=filter60, x=Fertility.Rate, y=LifeExpec, color=Region, main="Year 1960")
+qplot(data=filter13, x=Fertility.Rate, y=LifeExpec, color=Region, main="Year 2013")
+```
 <p align="center">
     <img alt="Logo" src="./../Media/Evidence1960.png" >
 </p>
