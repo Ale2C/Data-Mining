@@ -36,6 +36,7 @@ October 29, 2020
 </div>
 
 <div align="Justify">
+
 **1. What is the Origin of the graphs?**
 
 It is not easy to pinpoint the exact moment when statistical charts were born. Graphical representation techniques were used since ancient times, in the form of terrestrial and celestial maps, but it could be said that it was not until the 18th century when modern statistical graphics emerged, mainly due to the advancement of the different scientific and social branches.
@@ -50,6 +51,7 @@ Playfair's life was marked by multiple vicissitudes as befits the times in which
 </div>
 
 <div align="Justify">
+
 **2. What is the grammar of graphs?**
 
 In the same way that to construct a sentence in our language, we make use of combinations of words (which can be nouns, verbs, adjectives, etc.) following a set of rules known as grammar, the grammar of graphics provides us with the rules to construct statistical graphs.
@@ -74,6 +76,7 @@ In the above code:
 
 
 **Bibliography**
+
 Dos siglos de graficos estadisticos: 1750 - 1950. Ine.es. (2021). Retrieved 30 October 2021, from https://www.ine.es/expo_graficos2010/expogra_inicio.htm#presentacion.
 
 Quesada, V., & Vergara, J. (2021). 1.1 UN POCO DE HISTORIA. Eumed.net. Retrieved 30 October 2021, from https://www.eumed.net/libros-gratis/2007a/239/1a.htm.
