@@ -35,4 +35,16 @@ October 29, 2020
 
 </div>
 
+<div align="Justify">
+1. What is the Origin of the graphs?
 
+It is not easy to pinpoint the exact moment when statistical charts were born. Graphical representation techniques were used since ancient times, in the form of terrestrial and celestial maps, but it could be said that it was not until the 18th century when modern statistical graphics emerged, mainly due to the advancement of the different scientific and social branches.
+
+The word statistics derives from the modern Latin statisticum collegium ("council of state"), from the old Latin status (position, "form of government), from the modern Italian word statista (" statesman "," politician ") and from the old Italian stato ("State"). In 1749, the German, Gottfried Achenwall (1719-1792) uses the term Statistik in his book entitled "Staatswissenschaft der vornehmen Europäischen Reiche und Republiken", who originally designated the statistical word for the analysis of government data, defining it as the "Science of the State". Gottfried Achenwall is known as the "Father of Statistics."
+
+The first person to introduce the term statistics in England was Sir John Sinclair (1754-1835) with his work "Statistical Account of Scotland" (1791-, 1799) compiled in 21 volumes. The author explains in his book that the word statistics was adopted thanks to the study of research carried out in Germany, as a new word that would attract the attention of the English; In contrast, in Germany statistics is used as an instrument to measure the strength of a state, while Sinclair would use it as a generator of internal information to find shortcomings and propose improvements in the country. This work was followed by two publications: the second edition produced between 1834 and 1845; the third edition begins after the second world war covering the periods between 1951 and 1992.
+At the beginning of the 19th century, the word statistics adopted a more generalized meaning towards the collection and classification of any type of quantitative data.
+
+Scottish engineer and economist William Playfair (1759–1823) is considered the father of statistical graphics. He pioneered the use of the line chart to represent time series and was the creator of the bar chart and the pie chart.
+Playfair's life was marked by multiple vicissitudes as befits the times in which he lived. He carried out numerous activities (engraver, engineer, real estate speculator, journalist, newspaper editor, economist, author of treatises) until in the final part of his life, he began to write. The result of this activity is The Commercial and Political Atlas (1786) considered the first work of graphical representation of data. This statistical atlas uses 43 line graphs and a bar graph. Later he would publish The Statistical Breviary (1801) where pie charts and pie charts would appear for the first time.
+</div>
