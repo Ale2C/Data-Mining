@@ -58,7 +58,8 @@ This can take both values ​​expressed in whole and fractional numbers and an
 x is the variable that defines the concentration in grams of gold of some mineral samples (7.4 gr, 6.1, 1.9, 23.3, 12.7, 8.1, 9.5, 11.8, ... n)
 
 
-**Types of probability distributions**
+
+### Types of probability distributions
 
 Scientists have always been fascinated with the phenomena and events that occur in everyday life, so they have set about building theoretical probabilistic models, through experimentation, that describe them. Some of the most used today are:
 
