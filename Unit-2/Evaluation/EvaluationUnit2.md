@@ -100,5 +100,5 @@ t +
 ##The graph that we end up
 
 <p align="center">
-    <img alt="Logo" src="./../Media/EvaluationUnit2.png" >
+    <img alt="Graph" src="./../Evaluation/EvaluationUnit2.png" >
 </p>
