@@ -51,7 +51,7 @@ colnames(Movies) <- c("Dayofweek", "Director", "Genre", "MovieTitle", "RealseDat
 
 **We wont use all the genres so we will filter it to select specific ones**
 
-Here select the columns we need in this case
+Here select the values we need in this case
 ```R
 dfgenre <- Movies$Genre %in% c("action","adventure","animation","comedy","drama")
 
@@ -60,7 +60,7 @@ filtermovies <- Movies[dfgenre,]
 
 **Same as genre, we use the same method with the studios**
 
-Here we go to use the equals acction than after but with other columns, because we want have diferentes types of points
+Here we go to use the equals acction than after but with other values, because we want have diferentes types of points
 ```R
 dfstudio <- filtermovies$Studio %in% c("Buena Vista Studios","Fox","Paramount Pictures","Sony","Universal","WB")
 ```
