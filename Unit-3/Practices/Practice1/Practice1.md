@@ -91,6 +91,12 @@ ggplot() +
   ylab('Salary')
 ```
 
+# Here we have the training set graph that show's us the relation two variables that in this case is Salary representing "y" and Years of experience being the "x". Using lineal regression we can predict the value of the next variable, we see that the early years and late years have more relation between the two variables.
+<p >
+  <img alt="Unit-3" src="./P1graph1.png" >
+</p>
+
+
 # Visualising the Test set results
 
 ```R 
@@ -103,5 +109,11 @@ ggplot() +
   xlab('Years of experience') +
   ylab('Salary')
 ```
+
+# For test, we can see a very noticeable aspect in the graph, the fact that it was less values represented in the graph, it's because of subset that retuns subsets of data that can be vectors or dataframes that aproved the established conditions that with test set is with the split == False
+<p >
+  <img alt="Unit-3" src="./P1graph2.png" >
+</p>
+
 
 
