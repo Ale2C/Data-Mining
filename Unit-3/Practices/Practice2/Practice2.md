@@ -45,13 +45,13 @@ setwd("/home/chris/Documents/itt/Enero_Junio_2020/Mineria_de_datos/DataMining/Ma
 getwd()
 ```
 
-**Importing the dataset **
+**Importing the dataset**
 
 ```R 
 dataset <- read.csv('50_Startups.csv')
 ```
 
-**Encoding categorical data **
+**Encoding categorical data**
 
 ```R 
 dataset$State = factor(dataset$State,
@@ -61,7 +61,7 @@ dataset$State = factor(dataset$State,
 dataset
 ```
 
-**Splitting the dataset into the Training set and Test set **
+**Splitting the dataset into the Training set and Test set**
 ```R 
 Install.packages('caTools')
 library(caTools)
@@ -71,7 +71,7 @@ training_set <- subset(dataset, split == TRUE)
 test_set <- subset(dataset, split == FALSE)
 ```
 
-**Fitting Multiple Linear Regression to the Training set **
+**Fitting Multiple Linear Regression to the Training set**
 ```R 
 regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State)
 regressor = lm(formula = Profit ~ .,
@@ -80,15 +80,20 @@ regressor = lm(formula = Profit ~ .,
 summary(regressor)
 ```
 
-**Prediction the Test set results **
+**Prediction the Test set results**
 
 ```R 
 y_pred = predict(regressor, newdata = test_set)
 y_pred
 ```
 
-**Assigment: visualize the siple liner regression model with R.D.Spend **
-**Building the optimal model using Backward Elimination **
+**Assigment: visualize the siple liner regression model with R.D.Spend**
+
+<p >
+  <img alt="Unit-3" src="./P2graph1.png" >
+</p>
+
+**Building the optimal model using Backward Elimination**
 ```R 
 regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State,
                data = dataset )
@@ -111,6 +116,7 @@ y_pred
 ```
 
 **Homework analise the follow atomation backwardElimination function **
+**Backward elimination is a process made in the Stepwise Regression model that focuses in adding and removing some predictors so that the model can have a lower prediction error, looking it like that, this machine learning technique is very useful and with the following code we can see the structure of how this work's. In the code we see that it has a for that will look in the lenght of variable "x" in that we have regressor that basically show's the asignation of formula and data, later we have maxVar that will return the maximum variable of the cofficcients of the summary of regressor later with if we see a comparasion between  of the max variable maxVar and sl, so it can "pick" what variables are gonna be valid in the graph.**
 ```R 
 backwardElimination <- function(x, sl) {
   numVars = length(x)
@@ -127,9 +133,6 @@ backwardElimination <- function(x, sl) {
 }
 
 SL = 0.05
-```
-
-```R 
 dataset = dataset[, c(1,2,3,4,5)]
 training_set
 backwardElimination(training_set, SL)
