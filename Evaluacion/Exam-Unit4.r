@@ -1,3 +1,4 @@
+#Chose the location we want woork
 
 getwd()
 setwd("C:/Users/vanem/OneDrive/Documentos/9 SEMESTRE/Mineria/Repo mineria/DataMining/MachineLearning/LogisticRegression")
