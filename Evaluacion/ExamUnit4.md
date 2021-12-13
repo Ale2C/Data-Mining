@@ -76,6 +76,8 @@ TEM(dat2)
 ```
 <img alt="Logo" src="./Elbow_Graphic.png">
 
+<img alt="Logo" src="./Elbow_Graphic2.png">
+
 Like we can see the breaking point is in the point number 3 so is these the number we used more later.
 
 <br>
@@ -90,7 +92,6 @@ y_kmeans = kmeans$cluster
 <br>
 
 Here we visualize the cluster, but first we need the cluster library in order to execute the code well
-
 ```R
 library(cluster)
 
