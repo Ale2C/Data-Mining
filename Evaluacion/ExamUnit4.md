@@ -52,7 +52,8 @@ Now we import the data set and select the columns
 
 ```R
 dataset <- read.csv(file.choose())
-dataset = dataset[1:4]
+dat1 = dataset[1:4]
+dat2 = dataset[3:4]
 ```
 <br>
 
@@ -70,7 +71,8 @@ TEM <- function(dataset){
              ylab = 'WCSS')
 }
 
-TEM(dataset)
+TEM(dat1)
+TEM(dat2)
 ```
 <img alt="Logo" src="./Elbow_Graphic.png">
 
@@ -84,3 +86,42 @@ set.seed(29)
 kmeans = kmeans(x = dataset, centers = 3)
 y_kmeans = kmeans$cluster
 ```
+
+<br>
+
+Here we visualize the cluster, but first we need the cluster library in order to execute the code well
+
+```R
+library(cluster)
+
+#Sepal lenght and Petal width
+clusplot(dat1,
+         y_kmeans,
+         lines = 0,
+         shade = TRUE,
+         color = TRUE,
+         labels = 2,
+         plotchar = FALSE,
+         span = TRUE,
+         main = paste('Clusters of customers'),
+         xlab = 'Annual Income',
+         ylab = 'Spending Score')
+```  
+<img alt="Logo" src="./ClusterIris1.png">
+
+
+```R
+#Petal lenght and Petal width
+clusplot(dat2,
+         y_kmeans,
+         lines = 0,
+         shade = TRUE,
+         color = TRUE,
+         labels = 2,
+         plotchar = FALSE,
+         span = TRUE,
+         main = paste('Clusters of customers'),
+         xlab = 'Annual Income',
+         ylab = 'Spending Score')
+```
+<img alt="Logo" src="./ClusterIris2.png">
