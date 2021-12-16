@@ -41,7 +41,7 @@ clusplot(dat1,
          labels = 2,
          plotchar = FALSE,
          span = TRUE,
-         main = paste('Clusters of customers'),
+         main = paste('Clusters of Iris'),
          xlab = 'Sepal lenght',
          ylab = 'Petal width')
 
@@ -54,6 +54,6 @@ clusplot(dat2,
          labels = 2,
          plotchar = FALSE,
          span = TRUE,
-         main = paste('Clusters of customers'),
+         main = paste('Clusters of Iris'),
          xlab = 'Petal lenght',
          ylab = 'Petal width')
