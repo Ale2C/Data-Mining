@@ -42,8 +42,8 @@ clusplot(dat1,
          plotchar = FALSE,
          span = TRUE,
          main = paste('Clusters of customers'),
-         xlab = 'Annual Income',
-         ylab = 'Spending Score')
+         xlab = 'Sepal lenght',
+         ylab = 'Petal width')
 
 #Petal lenght and Petal width
 clusplot(dat2,
@@ -55,5 +55,5 @@ clusplot(dat2,
          plotchar = FALSE,
          span = TRUE,
          main = paste('Clusters of customers'),
-         xlab = 'Annual Income',
-         ylab = 'Spending Score')
+         xlab = 'Petal lenght',
+         ylab = 'Petal width')
